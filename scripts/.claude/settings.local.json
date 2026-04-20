@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "Bash(cp \"/c/Preposterous/01-mental-wealth/social-effects-inc/website-demo/Social Effects Inc HTML.html\" /c/PreposterousGit/social-effects-inc/index.html)",
+      "Read(//c/PreposterousGit/social-effects-inc//**)",
+      "Read(//c/PreposterousGit/social-effects-inc/**)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Add noindex + robots.txt — stealth posture before public flip *)",
+      "Bash(git push *)"
+    ]
+  }
+}
