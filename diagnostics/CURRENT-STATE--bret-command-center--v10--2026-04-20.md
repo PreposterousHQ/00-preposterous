@@ -7,9 +7,28 @@
 
 ## THE HEADLINE
 
-Session 10 was the session where the system got honest about itself -- and got the tools to stay that way.
+Session 10 was the session where the system got honest about itself -- and got the tools to stay that way, then proved it.
 
-Three permanent wins locked: Filesystem MCP installed (Claude can now read and write the laptop directly, every future session), The Assignment completed (preposterize proven broken, 1 of 6 surfaces confirmed, documented), and prepo.ps1 built and tagged prepo-v0 (four bugs fixed, honest verification replacing theater). The git mirror has v9 and the Session 10 artifacts committed. Filesystem MCP is now globally installed and survives restarts.
+Four permanent wins locked: Filesystem MCP installed (globally, restart-proof), The Assignment completed (preposterize proven broken in every dimension gstack predicted), prepo.ps1 built and tagged prepo-v0, AND prepo-v0 validated live end-to-end with 5 of 6 surfaces independently hash-verified. The first honest propagation run in the ecosystem's history. A silent-drift bug in preposterize's rclone path was caught and fixed alongside (the rclone cron itself was unaffected -- only manual preposterize runs had the bug).
+
+The v9 headline said Session 9 "gave the system self-awareness -- the capacity to catch itself lying." Session 10 built the tool that tells the truth.
+
+## SESSION 10 ACHIEVEMENT -- THE NUMBERS
+
+**Final prepo-v0 validation run (04:20 UTC, 2026-04-21):**
+
+| Surface | Status | Verification method |
+|---------|--------|---------------------|
+| Laptop | OK | SHA256 hash match to source |
+| G: mount | timeout (honest) | 120s poll, Drive upload queue still active |
+| Drive cloud | unverified (deferred) | Blocker 2 -- Drive API OAuth pending |
+| Droplet Conductor | OK | sha256sum over SSH, hash match |
+| Droplet Geodessa | OK | sha256sum over SSH, hash match |
+| GitHub | OK | file present in mirror after commit+push |
+
+**4 hard passes. 2 honest deferrals. Zero theater.**
+
+Compare to the preposterize Assignment run earlier in the same session: 1 of 6 surfaces confirmed, script reported "DONE. Artifact propagated." The contrast is the point.
 
 ---
 
@@ -171,6 +190,9 @@ Git commit completed manually after idempotency prevented re-run:
 15. Holopedia refinements, character extraction, Bonfires bridge
 16. Bot token rotation (Conductor + Geodessa)
 17. Build build-backlog.md and synergyworks-roster.md
+
+### New from Session 10 (queued, not urgent)
+18. **OpenClaw update check** -- visit openclaw.ai and docs.openclaw.ai, check for new releases, security advisories, breaking-change warnings since 2026.4.15 (currently installed on droplet). If a newer version exists, read release notes, stage update on droplet in controlled window, verify Gateway + all 12 agents still boot clean after upgrade. Run the systems-wide ground-truth audit from Session 9 again post-upgrade to catch any silent config drift (heartbeat routing, groupPolicy, agent model assignments). Budget ~45 min for audit + staged rollback if anything breaks. Do this BEFORE any weekend reconciler work so we're not debugging on a stale Gateway.
 
 ---
 
