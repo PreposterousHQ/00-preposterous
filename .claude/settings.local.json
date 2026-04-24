@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "Read(//c/PreposterousGit/**)",
+      "Bash(mv /c/PreposterousGit/00-preposterous/depsy /c/PreposterousGit/depsy)",
+      "Bash(git -C /c/PreposterousGit/depsy add -A)",
+      "Bash(git -C /c/PreposterousGit/depsy commit -m \"Initial deploy: DePsy landing page\")",
+      "Bash(git -C /c/PreposterousGit/depsy push)",
+      "Bash(git -C /c/PreposterousGit/depsy rev-parse HEAD)",
+      "Bash(gh api *)"
+    ]
+  }
+}
