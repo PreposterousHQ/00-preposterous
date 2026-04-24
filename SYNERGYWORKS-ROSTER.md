@@ -34,7 +34,7 @@
 - **Status:** LIVE — registered April 21, corpus-aware since April 24
 - **Model:** Sonnet 4.6 (default), Opus 4.7 on explicit request for synthesis
 - **Workspace:** /home/openclaw/.openclaw/workspace-kerouac/
-- **Telegram:** Peace Room member (bot token: 8652117790:AAH... — ROTATE THIS)
+- **Telegram:** Peace Room member (token rotated 2026-04-24 via BotFather — lives in openclaw.json only)
 - **Corpus access:** POST http://172.17.0.1:8765/query via Node.js (curl unavailable)
 - **Skills:** skills/query-corpus.md
 - **Published:** 3 pieces on activation day (2 dispatches + Trimtab Holopedia entry)
