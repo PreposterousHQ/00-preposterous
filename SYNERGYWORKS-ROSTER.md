@@ -1,7 +1,7 @@
 # SYNERGYWORKS ROSTER
 ## Every planned ClawBot — role, status, model, dependencies
 
-**Last updated:** 2026-04-24 (Session 11)
+**Last updated:** 2026-04-25 (Session 12)
 
 ---
 
@@ -80,6 +80,17 @@ proper OpenClaw agents following PLAYBOOK--OpenClaw-Agent-Registration.md.
 - **Trigger for deployment:** After Kerouac proves creative-bot pattern, Drive API OAuth live, Janet briefed
 - **Model:** Sonnet for ingestion, Opus for synthesis
 - **Pattern:** "Relationship-memory bot" — first of a potential class (Zubin, Andrea, future patrons)
+
+### Marginalia (Vault Librarian / Gap-Junction Agent)
+- **Role:** Maintains coherence of the tool-evaluations vault, the playbook backlog, the references folder, and cross-references with active strategic-notes. Periodically sweeps the vault, queries other bots about whether their domain has changed since their last vault entry, surfaces trigger conditions that have fired, and maintains INDEX.md as the authoritative master scanner.
+- **Status:** Specified in REFERENCE--Levin-MCA-Architecture.md (Session 12). No SOUL.md yet — design ready but not built. Concept formally introduced in STRATEGIC-NOTE--DePsy-Corpus-Architecture-Levin-Reframe--2026-04-25.md and SYNTHESIS--Levin-MCA-as-Synergyworks-Blueprint--2026-04-25.md.
+- **Trigger for deployment:** After Mercury9000 + Clairvaux ship. Marginalia is the third in deployment sequence after the production-publishing layer (Mercury9000) and the R&D scouting layer (Clairvaux) are operational. Until then, vault coherence is maintained manually by Bret with Claude Code support.
+- **Model:** Haiku 4.5 with lightContext for daily heartbeat sweeps. Sonnet 4.6 for weekly cross-reference passes that synthesize and update INDEX. Opus 4.7 only for quarterly architectural-coherence reviews (e.g., "is the vault still serving its function after 50+ entries?").
+- **Pattern:** "Gap-junction agent" — first of its kind in the BRET roster. Distinct from specialized-tissue agents (Kerouac, Krishnamurti, Mercury9000) which produce a class of output, and from sensory agents (Geodessa, Clairvaux) which report state. Marginalia synchronizes setpoints across the vault and other bots without centralizing knowledge. She is the bot whose primary user is Future Bret — her job is to make sure the operating system gets smarter as it gets older, by ensuring no judgment, evaluation, or trigger gets lost.
+- **Cognitive light cone:** Small-medium (vault coherence, weekly sweep, quarterly architectural review)
+- **Stress signal:** Vault drift from coherence — vet entries with unmet trigger conditions; INDEX out of sync with files on disk; standing rules cited in chats but not catalogued; new playbooks created without backlog updates; tool pitches in old conversations that never made it to vet files
+- **Gap junctions:** Reads from tool-evaluations/, playbooks/, references/, strategic-notes/, diagnostics/ (current state docs only). Writes only to INDEX.md, README.md within tool-evaluations/, and to a weekly Peace Room digest. Queries other bots through Peace Room messages. Does NOT modify other bots' workspaces.
+- **Architectural note:** Marginalia is the first BRET bot designed explicitly in Multi-Scale Competency Architecture terms (per REFERENCE--Levin-MCA-Architecture.md). Her function is gap-junctional coupling between the vault substrate and the rest of the swarm — she is to the vault what bioelectric coupling is to a tissue. Cancer-pattern detection in other bots (drift, scope creep, context hoarding, gap-junction degradation) is a long-horizon Marginalia responsibility once she has the operational track record to support it. For initial deployment, focus is on vault coherence only.
 
 ---
 
